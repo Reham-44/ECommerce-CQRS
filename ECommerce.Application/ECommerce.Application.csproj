@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ECommerce.Domain\ECommerce.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Products\Commands\" />
+    <Folder Include="Products\Queries\" />
+    <Folder Include="Orders\Commands\" />
+    <Folder Include="Orders\Queries\" />
+    <Folder Include="Interfaces\Repositories\NewFolder\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="10.0.0" />
+    <PackageReference Include="MediatR.Contracts" Version="2.0.1" />
+  </ItemGroup>
+
+</Project>
